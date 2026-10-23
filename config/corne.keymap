@@ -90,6 +90,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        qwerty_layer {
+            display-name = "QWERTY";
+            bindings = <
+&lt UTIL TAB   QW_L1                                                QW_R1                              &kp BSLH
+&mt LGUI ESC   QW_L2                                                QW_R2                              &kp APOS
+&smsh          QW_L3                                                QW_R3                              &kp EQUAL
+                                     QW_LT                          QW_RT
+            >;
+        };
+
         base_layer {
             display-name = "Graphite";
             bindings = <
@@ -100,15 +110,7 @@
             >;
         };
 
-        qwerty_layer {
-            display-name = "QWERTY";
-            bindings = <
-&lt UTIL TAB   QW_L1                                                QW_R1                              &kp BSLH
-&mt LGUI ESC   QW_L2                                                QW_R2                              &kp APOS
-&smsh          QW_L3                                                QW_R3                              &kp EQUAL
-                                     QW_LT                          QW_RT
-            >;
-        };
+
 
         ext_layer {
             display-name = "Extend";
