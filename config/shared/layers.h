@@ -1,8 +1,8 @@
 /* Layer indices — shared by every board. */
 #pragma once
 
-#define BASE 0
-#define QWE  1
+#define BASE 1
+#define QWE  0
 #define EXT  2
 #define NUM  3
 #define SYS  4
